@@ -1,0 +1,13 @@
+Constructor Hangman Pseudocode: 
+
+1. User Input -- Want to Play?? Yes or No.
+
+2. If Yes, pull randomized, hidden word (hidden with dashes)
+
+3. User guesses letter. If right, letter displays. If wrong, decreases their remaining guesses
+ and prompts them to guess again. 
+
+4. If run of guesses, game ends.
+
+5. If word guessed within numbr of guesses, advance to the next word until no more words and guesses remain.
+
