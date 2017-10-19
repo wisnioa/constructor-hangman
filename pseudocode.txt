@@ -4,10 +4,19 @@ Constructor Hangman Pseudocode:
 
 2. If Yes, pull randomized, hidden word (hidden with dashes)
 
+array of words = random number 
+
+how many letters = how many dashes --> count how many letter --> 
+that many dashes display (.join), index of letter = index of dashes [i]
+
+indexOf letter (parameter) index must be > -1 is match, if not, no match 
+
+if # guesses >= 0 <--inquire prompt, else game over 
+
 3. User guesses letter. If right, letter displays. If wrong, decreases their remaining guesses
  and prompts them to guess again. 
 
 4. If run of guesses, game ends.
 
-5. If word guessed within numbr of guesses, advance to the next word until no more words and guesses remain.
+5. If word guessed within number of guesses, advance to the next word until no more words and guesses remain.
 

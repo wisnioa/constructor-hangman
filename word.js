@@ -1,14 +1,22 @@
 
 
-//Randomizing words from word bank
 var letterFile = require('./letter.js');
-var wordBank = ["margarita", "beer", "hurricane", "screwdriver", "martini", "wine"];
-
-var randomWord = Math.floor(Math.random() * wordBank.length);
-
-var newWord = wordBank[randomWord];
+var wordBank = require('./wordBank.js');
+var words = [];
+var guessedLetters = [];
 
 
+var Word = function(word) {
+    this.word = word;
 
-
-module.exports = newWord; 
+    this.showLetter = function (){
+    for (var i = 0; i < randomWord[i].length; i++) {
+        if (randomWord[i] === " ") {
+            words[i] = " ";
+        }
+        else {
+            words[i] = "_";
+        }
+    }
+}
+}

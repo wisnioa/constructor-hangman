@@ -1,9 +1,20 @@
 var inquirer = require("inquirer");
-
 var wordConstructor = require("./word.js");
 var letterConstructor = require("./letter.js");
 
 var maxGuesses = 10;
+var remainingGuesses = 10;
+
+var wordArray = [firstWord];
+
+var guessedLetters = [];
+
+var matchedLetters = [];
+
+
+var wordBank = ["margarita", "beer", "hurricane", "screwdriver", "martini", "wine"];
+
+var randomWord = Math.floor(Math.random() * wordBank.length);
 
 
 
