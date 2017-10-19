@@ -1,11 +1,11 @@
 var inquirer = require("inquirer");
 var wordConstructor = require("./word.js");
 var letterConstructor = require("./letter.js");
-var wordBankfile = require("./wordBank.js");
+var wordBankFile = require("./wordBank.js");
 
 // console.log(wordBankFile.randomWord);
 
-var maxGuesses = 10;
+
 var remainingGuesses = 10;
 var guessedLetters = [];
 
@@ -14,7 +14,7 @@ console.log('Welcome to Drunk Hangman!');
 
 
 
-
+function startGame(){
 inquirer.prompt([{
       name: "play",
       type: "confirm",
@@ -28,12 +28,14 @@ inquirer.prompt([{
   }
 else{
   console.log("Suit yourself!");
+    }
+  })
 }
-});
       
   
   
   function letsPlay(){
+    wordBankFile.randomWord.showLetter();
     console.log(wordBankFile.randomWord.showLetter());
     inquirer.prompt([{
       type: 'input',
@@ -41,25 +43,18 @@ else{
       message: 'Please select a letter.'
         
     }]).then(function (){
+      
+      if (remainingGuesses === 0){
 
-
-
-
-
+        console.log("Game over!");
+        startGame();
+      }
     })
-  }
+  };
+
+  startGame();
+  
         
 
     
-//   function endGame (){
-// if (maxGuesses === 0){
-// prompt();
 
-// if (prompt.confirm === true){
-
-
-// }
-// }
-
-
-// 

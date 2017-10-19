@@ -7,11 +7,12 @@ var guessedLetters = [];
 
 
 var Letter = function(letter){
+    
     this.letter= letter;
 
     this.toLowerCase = function(letter) {
-        var lowerLetter = guessedLetters.toLowerCase();
-        return lowerLetter;
+       this.letter = guessedLetters.toLowerCase();
+        return this.letter;
       }
     
     
@@ -25,8 +26,7 @@ var Letter = function(letter){
                 }
             }
         }
-    
-    findLetters();
+
     
     this.lettersGuessed = function (letter){
     if (guessedLetters === wordBankFile.randomWord[i]){

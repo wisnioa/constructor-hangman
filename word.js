@@ -20,3 +20,5 @@ var Word = function(word) {
     }
 }
 }
+
+
