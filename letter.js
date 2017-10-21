@@ -40,7 +40,8 @@ var Letter = function(letter){
         } 
     
     }
-
+    var letter = Letter ();
+module.exports = Letter;
 
     
 

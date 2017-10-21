@@ -32,7 +32,7 @@ else{
   })
 }
       
-  
+
   
   function letsPlay(){
     wordBankFile.randomWord.showLetter();

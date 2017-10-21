@@ -20,5 +20,6 @@ var Word = function(word) {
     }
 }
 }
-
+var word = Word ();
+module.exports = Word;
 
